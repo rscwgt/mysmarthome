@@ -1,3 +1,3 @@
 # README.md 
 ## Purpose: 
-Repository fo my SmartHome component adaptions, cionfigurations
+Repository fo my SmartHome component adaptions, configurations
