@@ -1,0 +1,2539 @@
+{
+  "BueroThermostat_1_PartyTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_PartyTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_ActualTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_ActualTemperature"
+    }
+  },
+  "WohnzimmerStrasseFensterkontakt_0_SignalstRke -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431899",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerStrasseFensterkontakt_0_SignalstRke"
+    }
+  },
+  "BadHeizthermostat_1_SetTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_SetTemperature"
+    }
+  },
+  "BadHeizthermostat_1_PartyTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_PartyTemperature"
+    }
+  },
+  "BueroThermostat_1_BoostPosition -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#BOOST_POSITION": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#BOOST_POSITION"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_BoostPosition"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_PartyStopMonth -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_PartyStopMonth"
+    }
+  },
+  "KuecheHeizthermostat_1_ManuMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_ManuMode"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_EcoTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_EcoTemperature"
+    }
+  },
+  "BadHeizthermostat_1_MaxTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_MaxTemperature"
+    }
+  },
+  "WohnzimmerWandthermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_BoostTimePeriod"
+    }
+  },
+  "BadFensterkontakt_0_SignalstRke -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadFensterkontakt_0_SignalstRke"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_PartyTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_PartyTemperature"
+    }
+  },
+  "BadHeizthermostat_1_PartyStopDay -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_PartyStopDay"
+    }
+  },
+  "KuecheHeizthermostat_1_PartyStopMonth -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_PartyStopMonth"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_TemperatureOffset -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#TEMPERATURE_OFFSET": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#TEMPERATURE_OFFSET"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_TemperatureOffset"
+    }
+  },
+  "KuecheHeizthermostat_1_PartyStopYear -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#PARTY_STOP_YEAR": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#PARTY_STOP_YEAR"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_PartyStopYear"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_ManuMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_ManuMode"
+    }
+  },
+  "KuecheFensterkontakt_0_SignalStrength -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0432397",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheFensterkontakt_0_SignalStrength"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_PartyTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_PartyTemperature"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_0_SignalstRke -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_0_SignalstRke"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_0_SignalstRke -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_0_SignalstRke"
+    }
+  },
+  "BadHeizthermostat_1_EcoTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_EcoTemperature"
+    }
+  },
+  "WohnzimmerStrasseFensterkontakt_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431899",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerStrasseFensterkontakt_0_NiedrigerBatteriestatus"
+    }
+  },
+  "KuecheHeizthermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "WohnzimmerWandthermostat_1_BoostMode -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_BoostMode"
+    }
+  },
+  "WohnzimmerWandthermostat_1_PartyStopDay -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_PartyStopDay"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_ManuMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_ManuMode"
+    }
+  },
+  "BadHeizthermostat_1_BoostPosition -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#BOOST_POSITION": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#BOOST_POSITION"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_BoostPosition"
+    }
+  },
+  "WohnzimmerWandthermostat_1_PartyTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_PartyTemperature"
+    }
+  },
+  "KuecheHeizthermostat_1_TemperatureOffset -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#TEMPERATURE_OFFSET": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#TEMPERATURE_OFFSET"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_TemperatureOffset"
+    }
+  },
+  "BadFensterkontakt_1_State -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431921",
+          "1#STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadFensterkontakt_1_State"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_PartyStopTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_PartyStopTime"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_BoostPosition -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#BOOST_POSITION": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#BOOST_POSITION"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_BoostPosition"
+    }
+  },
+  "BueroThermostat_1_Locked -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#LOCKED": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#LOCKED"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_Locked"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_BoostMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_BoostMode"
+    }
+  },
+  "WohnzimmerWandthermostat_1_EcoTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_EcoTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_PartyStopTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_PartyStopTime"
+    }
+  },
+  "BueroThermostat_0_SignalstRke -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_0_SignalstRke"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "KuecheHeizthermostat_1_AutoMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#AUTO_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#AUTO_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_AutoMode"
+    }
+  },
+  "KuecheHeizthermostat_1_PartyTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#PARTY_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#PARTY_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_PartyTemperature"
+    }
+  },
+  "KuecheHeizthermostat_1_EcoTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_EcoTemperature"
+    }
+  },
+  "WohnzimmerWandthermostat_1_WindowOpenTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#WINDOW_OPEN_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#WINDOW_OPEN_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_WindowOpenTemperature"
+    }
+  },
+  "BadHeizthermostat_1_PartyStopTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_PartyStopTime"
+    }
+  },
+  "KuecheHeizthermostat_1_ComfortTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_ComfortTemperature"
+    }
+  },
+  "BadHeizthermostat_1_ActualTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_ActualTemperature"
+    }
+  },
+  "KuecheHeizthermostat_1_ActualTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_ActualTemperature"
+    }
+  },
+  "BadHeizthermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_ComfortTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_ComfortTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_PartyStopDay -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_PartyStopDay"
+    }
+  },
+  "KuecheHeizthermostat_1_SetTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_SetTemperature"
+    }
+  },
+  "BadHeizthermostat_1_BoostMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_BoostMode"
+    }
+  },
+  "AstroSunData_Set_StartTime -\u003e astro:sun:home:set#start": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "astro",
+          "sun",
+          "home",
+          "set#start"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "AstroSunData_Set_StartTime"
+    }
+  },
+  "BueroThermostat_1_SetTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_SetTemperature"
+    }
+  },
+  "BadHeizthermostat_1_ValveState -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#VALVE_STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#VALVE_STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_ValveState"
+    }
+  },
+  "BueroThermostat_1_DecalcificationTime -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#DECALCIFICATION_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#DECALCIFICATION_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_DecalcificationTime"
+    }
+  },
+  "WohnzimmerWandthermostat_0_SignalstRke -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_0_SignalstRke"
+    }
+  },
+  "BadHeizthermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_BoostTimePeriod"
+    }
+  },
+  "WohnzimmerWandthermostat_1_ControlMode -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_ControlMode"
+    }
+  },
+  "BadHeizthermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#DECALCIFICATION_WEEKDAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#DECALCIFICATION_WEEKDAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_DecalcificationWeekday"
+    }
+  },
+  "WohnzimmerWandthermostat_1_MaxTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_MaxTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_AutoMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#AUTO_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#AUTO_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_AutoMode"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_DecalcificationTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#DECALCIFICATION_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#DECALCIFICATION_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_DecalcificationTime"
+    }
+  },
+  "KuecheFensterkontakt_1_State -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0432397",
+          "1#STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheFensterkontakt_1_State"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_WindowOpenTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#WINDOW_OPEN_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#WINDOW_OPEN_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_WindowOpenTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_SetTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_SetTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#DECALCIFICATION_WEEKDAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#DECALCIFICATION_WEEKDAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday"
+    }
+  },
+  "WohnzimmerWandthermostat_1_SetTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_SetTemperature"
+    }
+  },
+  "BueroThermostat_1_ActualTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_ActualTemperature"
+    }
+  },
+  "KuecheHeizthermostat_1_BoostPosition -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#BOOST_POSITION": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#BOOST_POSITION"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_BoostPosition"
+    }
+  },
+  "BueroThermostat_1_ManuMode -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_ManuMode"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_PartyStopMonth -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_PartyStopMonth"
+    }
+  },
+  "BadHeizthermostat_1_WindowOpenTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#WINDOW_OPEN_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#WINDOW_OPEN_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_WindowOpenTemperature"
+    }
+  },
+  "BueroThermostat_1_PartyStopTime -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_PartyStopTime"
+    }
+  },
+  "BueroThermostat_1_TemperatureOffset -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#TEMPERATURE_OFFSET": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#TEMPERATURE_OFFSET"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_TemperatureOffset"
+    }
+  },
+  "BadHeizthermostat_1_ManuMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_ManuMode"
+    }
+  },
+  "WohnzimmerWandthermostat_1_PartyStopTime -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_PartyStopTime"
+    }
+  },
+  "WohnzimmerWandthermostat_1_PartyStopMonth -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_PartyStopMonth"
+    }
+  },
+  "KuecheHeizthermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_BoostTimePeriod"
+    }
+  },
+  "KuecheHeizthermostat_1_WindowOpenTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#WINDOW_OPEN_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#WINDOW_OPEN_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_WindowOpenTemperature"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_ActualTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_ActualTemperature"
+    }
+  },
+  "WohnzimmerWandthermostat_1_ComfortTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_ComfortTemperature"
+    }
+  },
+  "BueroThermostat_1_PartyStopMonth -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_PartyStopMonth"
+    }
+  },
+  "BueroThermostat_1_ControlMode -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_ControlMode"
+    }
+  },
+  "BueroThermostat_1_WindowOpenTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#WINDOW_OPEN_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#WINDOW_OPEN_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_WindowOpenTemperature"
+    }
+  },
+  "BadHeizthermostat_1_PartyStopMonth -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#PARTY_STOP_MONTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#PARTY_STOP_MONTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_PartyStopMonth"
+    }
+  },
+  "BadFensterkontakt_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431921",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadFensterkontakt_0_NiedrigerBatteriestatus"
+    }
+  },
+  "KuecheHeizthermostat_1_ValveState -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#VALVE_STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#VALVE_STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_ValveState"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_MaxTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_MaxTemperature"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "BueroThermostat_1_EcoTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_EcoTemperature"
+    }
+  },
+  "BueroThermostat_1_ValveState -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#VALVE_STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#VALVE_STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_ValveState"
+    }
+  },
+  "KuecheHeizthermostat_1_BoostMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_BoostMode"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_BoostPosition -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#BOOST_POSITION": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#BOOST_POSITION"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_BoostPosition"
+    }
+  },
+  "BadHeizthermostat_1_DecalcificationTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#DECALCIFICATION_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#DECALCIFICATION_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_DecalcificationTime"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_SetTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_SetTemperature"
+    }
+  },
+  "WohnzimmerWandthermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "KuecheHeizthermostat_1_PartyStopDay -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_PartyStopDay"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_ControlMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_ControlMode"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#DECALCIFICATION_WEEKDAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#DECALCIFICATION_WEEKDAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_DecalcificationWeekday"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_ValveState -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#VALVE_STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#VALVE_STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_ValveState"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_PartyStopDay -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_PartyStopDay"
+    }
+  },
+  "KuecheHeizthermostat_1_ControlMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_ControlMode"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_EcoTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#ECO_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#ECO_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_EcoTemperature"
+    }
+  },
+  "WohnzimmerWandthermostat_1_ActualTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#ACTUAL_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_ActualTemperature"
+    }
+  },
+  "BueroThermostat_1_AutoMode -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#AUTO_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#AUTO_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_AutoMode"
+    }
+  },
+  "BadHeizthermostat_1_ComfortTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_ComfortTemperature"
+    }
+  },
+  "BueroThermostat_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_0_NiedrigerBatteriestatus"
+    }
+  },
+  "BueroThermostat_1_MaxTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_MaxTemperature"
+    }
+  },
+  "BueroThermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#DECALCIFICATION_WEEKDAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#DECALCIFICATION_WEEKDAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_DecalcificationWeekday"
+    }
+  },
+  "KuecheHeizthermostat_1_MaxTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_MaxTemperature"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_BoostTimePeriod"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_ComfortTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_ComfortTemperature"
+    }
+  },
+  "BadHeizthermostat_1_AutoMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#AUTO_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#AUTO_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_AutoMode"
+    }
+  },
+  "BueroThermostat_1_PartyStopDay -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#PARTY_STOP_DAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#PARTY_STOP_DAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_PartyStopDay"
+    }
+  },
+  "KuecheHeizthermostat_0_SignalStrength -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_0_SignalStrength"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_BoostTimePeriod"
+    }
+  },
+  "BadFensterkontakt_0_SignalstRke -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:0#SIGNAL_STRENGTH": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431921",
+          "0#SIGNAL_STRENGTH"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadFensterkontakt_0_SignalstRke"
+    }
+  },
+  "KuecheHeizthermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#DECALCIFICATION_WEEKDAY": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#DECALCIFICATION_WEEKDAY"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_DecalcificationWeekday"
+    }
+  },
+  "KuecheHeizthermostat_1_DecalcificationTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#DECALCIFICATION_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#DECALCIFICATION_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_DecalcificationTime"
+    }
+  },
+  "KuecheFensterkontakt_0_NiedrigerBatteriestatus -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:0#LOWBAT": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0432397",
+          "0#LOWBAT"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheFensterkontakt_0_NiedrigerBatteriestatus"
+    }
+  },
+  "BadHeizthermostat_1_TemperatureOffset -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#TEMPERATURE_OFFSET": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#TEMPERATURE_OFFSET"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_TemperatureOffset"
+    }
+  },
+  "WohnzimmerStrasseFensterkontakt_1_State -\u003e homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:1#STATE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-SC-Rd-WM-2",
+          "7e0bd100",
+          "LEQ0431899",
+          "1#STATE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerStrasseFensterkontakt_1_State"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_PartyStopYear -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#PARTY_STOP_YEAR": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#PARTY_STOP_YEAR"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_PartyStopYear"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_BoostMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1114732",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerInnenHeizthermostat_1_BoostMode"
+    }
+  },
+  "BueroThermostat_1_PartyStopYear -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#PARTY_STOP_YEAR": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#PARTY_STOP_YEAR"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_PartyStopYear"
+    }
+  },
+  "WohnzimmerWandthermostat_1_ShowSetTemperature -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SHOW_SET_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#SHOW_SET_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_ShowSetTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_MaxTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#MAX_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#MAX_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_MaxTemperature"
+    }
+  },
+  "BadHeizthermostat_1_PartyStopYear -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#PARTY_STOP_YEAR": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#PARTY_STOP_YEAR"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_PartyStopYear"
+    }
+  },
+  "BueroThermostat_1_BoostTimePeriod -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#BOOST_TIME_PERIOD": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#BOOST_TIME_PERIOD"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_BoostTimePeriod"
+    }
+  },
+  "WohnzimmerWandthermostat_1_ManuMode -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#MANU_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#MANU_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_ManuMode"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#DECALCIFICATION_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#DECALCIFICATION_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_DecalcificationTime"
+    }
+  },
+  "WohnzimmerWandthermostat_1_PartyStopYear -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#PARTY_STOP_YEAR": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#PARTY_STOP_YEAR"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_PartyStopYear"
+    }
+  },
+  "WohnzimmerWandthermostat_1_TemperatureOffset -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#TEMPERATURE_OFFSET": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#TEMPERATURE_OFFSET"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_TemperatureOffset"
+    }
+  },
+  "BueroThermostat_1_BoostMode -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#BOOST_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#BOOST_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_BoostMode"
+    }
+  },
+  "BueroThermostat_1_ComfortTemperature -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#COMFORT_TEMPERATURE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "1#COMFORT_TEMPERATURE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroThermostat_1_ComfortTemperature"
+    }
+  },
+  "WohnzimmerTerrasseHeizthermostat_1_ControlMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1115280",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerTerrasseHeizthermostat_1_ControlMode"
+    }
+  },
+  "KuecheHeizthermostat_1_PartyStopTime -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#PARTY_STOP_TIME": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ0025277",
+          "1#PARTY_STOP_TIME"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "KuecheHeizthermostat_1_PartyStopTime"
+    }
+  },
+  "BadHeizthermostat_1_ControlMode -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#CONTROL_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "LEQ1256338",
+          "1#CONTROL_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BadHeizthermostat_1_ControlMode"
+    }
+  },
+  "WohnzimmerWandthermostat_1_AutoMode -\u003e homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#AUTO_MODE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-TC-C-WM-4",
+          "7e0bd100",
+          "LEQ1330811",
+          "1#AUTO_MODE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "WohnzimmerWandthermostat_1_AutoMode"
+    }
+  }
+}

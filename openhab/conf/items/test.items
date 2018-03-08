@@ -1,0 +1,1 @@
+Switch MQTT_Test "Testing..." { mqtt="<[raspimqtt:testing/mqtt/topic:state:default], >[raspimqtt:testing/mqtt/back-topic:command:*:default]" }

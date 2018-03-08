@@ -1,0 +1,1 @@
+DateTime Sunrise_Time "Sunrise [%1$tH:%1$tM]"  { channel="astro:sun:home:rise#start" }
