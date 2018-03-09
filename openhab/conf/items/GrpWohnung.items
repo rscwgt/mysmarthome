@@ -4,6 +4,7 @@ Group     LivingDining               "Wohn-Esszimmer"   <sofa>          (Home)
 Group     Kitchen                    "Küche"            <kitchen>       (Home)
 Group     Bathroom                   "Bad"       <bath>          (Home)
 Group     Office                     "Büro"       <office>          (Home)
+Group     Bedroom                     "Schlafzimmer"       <bedroom>          (Home)
 
 Number    LivingDining_Temperature   "Temperatur"       <temperature>   (LivingDining, gTemperature)      {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
 Number    LivingDining_Heating       "Heizung"          <heating>       (LivingDining, gHeating)          {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
@@ -20,6 +21,9 @@ Contact   Bathroom_Window            "Fenster"          <window>        (Bathroo
 
 Number    Office_Temperature       "Temperatur"       <temperature>   (Office, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
 Number    Office_Heating           "Heizung"          <heating>       (Office, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
+
+Number    Bedroom_Temperature       "Temperatur"       <temperature>   (Bedroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ1585205:1#ACTUAL_TEMPERATURE"}
+Number    Bedroom_Heating           "Heizung"          <heating>       (Bedroom, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ1585205:1#SET_TEMPERATURE"}
 
 Group:Number:AVG                 gTemperature   "Temperatur"   <temperature>   (Home)
 Group:Number:AVG                 gHeating       "Heizung"      <heating>       (Home)

@@ -44,9 +44,11 @@ Adapter.onNewMessage = function(msg) {
 
 Adapter.onGetHeatingWeekProfile = function(roomId, profile) {
     console.log("Profil für Raum "+roomId+" empfangen");
-    console.log(profile);
+    console.log(profile); 
     var container = $("#weekProfile");
     container.data( { room: roomId, data: profile}).trigger('changeData');
+    var data = tblGetProfileData();
+    console.log("Data set? "+data);
 }
 
 Adapter.retrieveHeatingWeekProfile = function(room) {

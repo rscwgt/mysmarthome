@@ -1,0 +1,27 @@
+
+<div class="container" id="vacation">
+
+    <h2>Urlaub</h2>
+
+    <div>
+    <select id="roomChooseGroup" class="selectpicker"  multiple>
+        <option value="livingroom">Wohnzimmer</option>
+        <option value="kitchen">Küche</option>
+        <option value="bathroom">Bad</option>
+        <option value="office">Büro</option>
+    </select> 
+    </div>
+
+    <button type="button" class="btn btn-outline-primary waves-effect" id="SetVacation" onclick="vacationSend">Senden</button>
+    
+</div>
+
+
+<script>
+    console.log("vacation.html - jquery read abwarten")
+    $( document ).ready(function() {
+        console.log("vacation.html - ready")
+        $('.selectpicker').selectpicker();
+    });
+
+</script>
