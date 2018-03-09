@@ -1,0 +1,8 @@
+sitemap astro label="Sonnenverlauf" {
+    Text label="Sonnenverlauf2" {
+        Frame {
+            Default item=Sunrise_Time
+
+        } 
+    }
+}

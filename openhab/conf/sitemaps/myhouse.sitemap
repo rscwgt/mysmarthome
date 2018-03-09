@@ -1,0 +1,39 @@
+sitemap myhouse label="Unsere Wohnung" {
+
+    Frame {
+        Group item=LivingDining
+        Group item=Kitchen
+        Group item=Bathroom
+		Group item=Office
+		Group item=Bedroom
+	}
+
+    Frame {
+		Text label="Wohnzimmer" icon="sofa" { 
+            Default item=LivingDining_Temperature label="Ist-Temperatur"
+            Setpoint item=LivingDining_Heating label="Soll-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+			Default item=LivingDining_Window label="Fenster"
+		}
+		
+        Text label="Temperatur" icon="temperature" {
+            Default item=LivingDining_Temperature label="Wohn-Esszimmer"
+            Default item=Kitchen_Temperature label="Küche"
+            Default item=Bathroom_Temperature label="Bad"
+            Default item=Office_Temperature label="Büro"
+            Default item=Bedroom_Temperature label="Schlafzimmer"
+        }
+		 Text label="Heizung" icon="heating" {
+            Setpoint item=LivingDining_Heating label="Wohn-Esszimmer [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+            Setpoint item=Kitchen_Heating label="Küche [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+            Setpoint item=Bathroom_Heating label="Bad [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+            Setpoint item=Office_Heating label="Büro [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+            Setpoint item=Bedroom_Heating label="Schlafzimmer [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+        }
+
+		Text label="Fenster" icon="window" {
+			Default item=LivingDining_Window label="Wohn-Esszimmer"
+			Default item=Kitchen_Window label="Küche"
+			Default item=Bathroom_Window label="Bad"
+		}
+	}
+}
