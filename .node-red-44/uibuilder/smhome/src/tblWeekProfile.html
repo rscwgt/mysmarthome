@@ -24,6 +24,7 @@
         <option value="kitchen">Küche</option>
         <option value="bathroom">Bad</option>
         <option value="office">Büro</option>
+        <option value="bedroom">Schlafzimmer</option>
     </select> 
 
 
@@ -39,45 +40,6 @@
 
         
     <button type="button" class="btn btn-outline-primary waves-effect" id="SetWeekProfile" onclick="Adapter.setHeatingWeekProfile(getSelectedRoomId())">Profil senden</button>
-
-    <!--
-<div id="weekDayChooseGroup" class="btn-group" data-toggle="buttons">
-    <label class="btn btn-primary active">
-      <input type="radio" name="weekdayChoose" id="chooseMonday" autocomplete="off" checked>Montag
-    </label>
-    <label class="btn btn-primary">
-      <input type="radio" name="weekdayChoose" id="chooseTuesday" autocomplete="off">Dienstag
-    </label>
-    <label class="btn btn-primary">
-      <input type="radio" name="weekdayChoose" id="chooseWednesday" autocomplete="off">Mittwoch
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="weekdayChoose" id="chooseThursday" autocomplete="off">Donnerstag
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="weekdayChoose" id="chooseFriday" autocomplete="off">Freitag
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="weekdayChoose" id="chooseSaturday" autocomplete="off">Samstag
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="weekdayChoose" id="chooseSunday" autocomplete="off">Sonntag
-    </label>
-</div>
--->
-
-<!--
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-  </div>
--->
 
     <table id="weekProfileTable" class="table table-striped">
         <thead><tr><th>bis</th><th>Temperatur</th></tr></thead>

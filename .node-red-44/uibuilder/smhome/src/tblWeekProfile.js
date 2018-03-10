@@ -69,7 +69,7 @@ tblSetProfile = function(dayId, data) {
     var max = 13;
     var count = 0;
     var lastEndtime = 2400;
-    var minTemperature = 17.0;
+    var minTemperature = 5;
     profile.forEach(function(element) {
         console.log(element);
         tblAppendProfileItem(tableRef, element.endtime, element.temperature);
