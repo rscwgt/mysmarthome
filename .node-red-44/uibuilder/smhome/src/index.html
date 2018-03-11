@@ -52,6 +52,8 @@
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
     <!-- <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script> -->
     <!-- These MUST be in the right order. Note no leading / -->
+    <link rel="stylesheet" href="vendor/bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-slider/dist/css/bootstrap-slider.min.css" />
 
 </head>
 
@@ -74,7 +76,7 @@
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">SmartHome</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li><a href="#" data-page="tblWeekProfile">Wochenprofil</a></li>
-                            <li><a href="#">Partytime</a></li>
+                            <li><a href="#" data-page="party">Partytime</a></li>
                         </ul>
                     </li>
 
@@ -193,8 +195,14 @@
         <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
         <!-- Bootstrap tooltips -->
         <script type="text/javascript" src="vendor/popper.js/dist/umd/popper.js"></script>
+
+        <script type="text/javascript" src="vendor/moment/min/moment-with-locales.min.js"></script>
+
         <!-- Bootstrap core JavaScript -->
         <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="vendor/bootstrap4-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+        
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="vendor/mdbootstrap/js/mdb.min.js"></script>
         
@@ -202,7 +210,9 @@
         
         
         <!-- Latest compiled and minified JavaScript -->
-        <script src="bootstrap-select-1.13.0-beta/js/bootstrap-select.js"></script>
+        <script  type="text/javascript" src="bootstrap-select-1.13.0-beta/js/bootstrap-select.js"></script>
+
+        <script  type="text/javascript" src="vendor/bootstrap-slider/dist/bootstrap-slider.js"></script>
 
         <!-- (Optional) Latest compiled and minified JavaScript translation files -->
         <!--    
@@ -219,6 +229,8 @@
         <script src="tblWeekProfile.js"></script>
         
         <script src="adapter.js"></script>
+
+        <script src="party.js"></script>
             
             
         <script>
@@ -240,6 +252,10 @@
             
             $(document).ready(function() {
                 $(".container").load("tblWeekProfile.html");
+            });
+            
+            $(document).ready(function() {
+                $(".container").load("party.html");
             });
             
             $(document).ready(function() {
@@ -285,6 +301,7 @@
                     });
                 });
             });
+
         </script>
             
     </body>
