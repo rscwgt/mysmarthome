@@ -16,7 +16,20 @@
         </div>
     </div>
 -->
-    <div class="col-sm-6" style="height:130px;">
+    <hr/>
+    <div class="row">
+        <div class="col-4">
+        <input id="partyTemperatureSlider" width="100%" data-slider-id='exSlider' type="text" data-slider-min="5" data-slider-max="25" data-slider-step="0.5" data-slider-value="17"/>
+        </div>
+        <div class="col-3">
+        <div class="input-group input-medium">
+            <input type="number" id="partyTemperatureInput" min="5" max="25" step="0.5" value="17.0" align="right" />
+            <span class="input-group-btn"> ° Grad</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="row col-4">
         <div class="form-group">
             <label for="partyDateTimePicker">bis</label>
             <div class='input-group date' id='partyDateTimePicker'>
@@ -29,18 +42,12 @@
         </div>
     </div>
 
-    <div class="row">
-        <input id="partyTemperatureSlider" data-slider-id='exSlider' type="text" data-slider-min="5" data-slider-max="25" data-slider-step="0.5" data-slider-value="17"/>
-    </div>
-    <div class="input-group input-medium ">
-        <input type="number" id="partyTemperatureInput" min="5" max="25" step="0.5" value="17.0" align="right" />
-        <span class="input-group-btn"> ° Grad</span>
-    </div>
-    <!--
+<!--
     <input type="number" onchange="setTwoNumberDecimal" min="5" max="25" step="0.5" value="17.0" />
     -->
 
-    <select id="partyRoomChooseGroup" class="selectpicker" multiple>
+    <div class="row col-6">
+    <select id="partyRoomChooseGroup" class="selectpicker" multiple  data-width="100%">
         <option value="livingroom">Wohnzimmer</option>
         <option value="kitchen">Küche</option>
         <option value="bathroom">Bad</option>
@@ -48,7 +55,9 @@
         <option value="bedroom">Schlafzimmer</option>
         <option value="home">Wohnung</option>
     </select> 
+    </div>
     
+    <hr/>
         
     <button type="button" class="btn btn-outline-primary waves-effect" id="SetParty" onclick="partyActivate()" >Aktivieren</button>
 

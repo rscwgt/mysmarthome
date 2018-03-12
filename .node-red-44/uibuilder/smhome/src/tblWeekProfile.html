@@ -17,25 +17,32 @@
     </div>
 -->
 
-    <div>
+    <div class="row">
+        <div class="col-3">
         <button type="button" class="btn btn-outline-primary waves-effect" id="GetWeekProfile" onclick="Adapter.retrieveHeatingWeekProfile(getSelectedRoomId())">
                 <span class="fa fa-reply"></span>Profil erfragen</button>
-
-        <select id="roomChooseGroup" class="selectpicker">
+        </div>
+        <div class="col-6">
+        <select id="roomChooseGroup" class="selectpicker" data-width="100%">
             <option value="livingroom">Wohnzimmer</option>
             <option value="kitchen">Küche</option>
             <option value="bathroom">Bad</option>
             <option value="office">Büro</option>
             <option value="bedroom">Schlafzimmer</option>
         </select> 
+        </div>
+        <div class="col-3">
+        <button type="button" class="btn btn-outline-primary waves-effect" id="SetWeekProfile" onclick="Adapter.setHeatingWeekProfile(getSelectedRoomId())">
+                <span class="fa fa-share"></span>Profil senden</button>
+        </div>
     </div>
 
-        
-    <button type="button" class="btn btn-outline-primary waves-effect" id="SetWeekProfile" onclick="Adapter.setHeatingWeekProfile(getSelectedRoomId())">
-            <span class="fa fa-share"></span>Profil senden</button>
-
-    <div>
-        <select id="visibleWeekprofileDay" class="selectpicker">
+    <hr>
+    
+    <div class="row col-12">
+        <div class="col-3"></div>
+        <div class="col-6">
+        <select id="visibleWeekprofileDay" class="selectpicker" data-width="100%">
             <option value="Monday">Montag</option>
             <option value="Tuesday">Dienstag</option>
             <option value="Wednesday">Mittwoch</option>
@@ -44,7 +51,9 @@
             <option value="Saturday">Samstag</option>
             <option value="Sunday">Sonntag</option>
         </select> 
-
+        </div>
+    </div>
+    <div class="row col-12">
         <table id="weekProfileTable" class="table table-striped">
             <thead><tr><th>bis</th><th>Temperatur</th></tr></thead>
             <tbody>
@@ -53,11 +62,13 @@
         </table>
     </div>
 
-    <div>
+    <div class="row col-12">
+        <div class="col-3">
         <button type="button" class="btn btn-outline-primary waves-effect" id="CopyProfileToDays" onclick="tblCopyProfileToDays()">
                 <span class="fa fa-clone"></span>Profil kopieren nach</button>
-
-        <select id="SelCopyProfileDays" class="selectpicker" multiple>
+        </div>
+        <div class="col-9">
+        <select id="SelCopyProfileDays" class="selectpicker" multiple data-width="100%">
             <option value="Monday">Montag</option>
             <option value="Tuesday">Dienstag</option>
             <option value="Wednesday">Mittwoch</option>
@@ -66,21 +77,29 @@
             <option value="Saturday">Samstag</option>
             <option value="Sunday">Sonntag</option>
         </select> 
+        </div>
     </div>
 
-    <div>
+    <hr>    
+    <div class="row">
+        <div class="col">
         <label for="downloadFile">In Datei speichern</label>
+        </div>
+        <div class="col">
         <button type="button" class="btn btn-outline-primary waves-effect" id="actionDownload" onclick="exportHeatingWeekProfile('heating.json')">
-                <span class="fa fa-download"></span>Download</button>
-    </div>
+            <span class="fa fa-download"></span>Download</button>
+        </div>
+        <div class="col-auto"></div>
 
-    <div>
+        <div class="col">
         <label for="actionUpload">Aus Datei lesen</label>
+        </div>
         <input  type="file" id="importLoader" onchange='readFile(this)' style="display: none;" >
+        <div class="col">
         <button type="button" class="btn btn-outline-primary waves-effect" id="actionUpload" onclick="importHeatingWeekProfile('heating.json')">
-                <span class="fa fa-upload"></span>Upload</button>
+            <span class="fa fa-upload"></span>Upload</button>
+        </div>
     </div>
-
 </div>
 
 
