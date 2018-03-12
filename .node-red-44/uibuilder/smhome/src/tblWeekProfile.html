@@ -17,53 +17,70 @@
     </div>
 -->
 
-    <button type="button" class="btn btn-outline-primary waves-effect" id="GetWeekProfile" onclick="Adapter.retrieveHeatingWeekProfile(getSelectedRoomId())">Profil erfragen</button>
+    <div>
+        <button type="button" class="btn btn-outline-primary waves-effect" id="GetWeekProfile" onclick="Adapter.retrieveHeatingWeekProfile(getSelectedRoomId())">
+                <span class="fa fa-reply"></span>Profil erfragen</button>
 
-    <select id="roomChooseGroup" class="selectpicker">
-        <option value="livingroom">Wohnzimmer</option>
-        <option value="kitchen">Küche</option>
-        <option value="bathroom">Bad</option>
-        <option value="office">Büro</option>
-        <option value="bedroom">Schlafzimmer</option>
-    </select> 
-
-
-    <select id="visibleWeekprofileDay" class="selectpicker">
-        <option value="Monday">Montag</option>
-        <option value="Tuesday">Dienstag</option>
-        <option value="Wednesday">Mittwoch</option>
-        <option value="Thursday">Donnerstag</option>
-        <option value="Friday">Freitag</option>
-        <option value="Saturday">Samstag</option>
-        <option value="Sunday">Sonntag</option>
-    </select> 
+        <select id="roomChooseGroup" class="selectpicker">
+            <option value="livingroom">Wohnzimmer</option>
+            <option value="kitchen">Küche</option>
+            <option value="bathroom">Bad</option>
+            <option value="office">Büro</option>
+            <option value="bedroom">Schlafzimmer</option>
+        </select> 
+    </div>
 
         
-    <button type="button" class="btn btn-outline-primary waves-effect" id="SetWeekProfile" onclick="Adapter.setHeatingWeekProfile(getSelectedRoomId())">Profil senden</button>
+    <button type="button" class="btn btn-outline-primary waves-effect" id="SetWeekProfile" onclick="Adapter.setHeatingWeekProfile(getSelectedRoomId())">
+            <span class="fa fa-share"></span>Profil senden</button>
 
-    <table id="weekProfileTable" class="table table-striped">
-        <thead><tr><th>bis</th><th>Temperatur</th></tr></thead>
-        <tbody>
-
-        </tbody>
-    </table>
-
-    <button type="button" class="btn btn-outline-primary waves-effect" id="CopyProfileToDays" onclick="tblCopyProfileToDays()">Profil kopieren nach</button>
-
-    <select id="SelCopyProfileDays" class="selectpicker" multiple>
-        <option value="Monday">Montag</option>
-        <option value="Tuesday">Dienstag</option>
-        <option value="Wednesday">Mittwoch</option>
-        <option value="Thursday">Donnerstag</option>
-        <option value="Friday">Freitag</option>
-        <option value="Saturday">Samstag</option>
-        <option value="Sunday">Sonntag</option>
-    </select> 
-
-    
     <div>
+        <select id="visibleWeekprofileDay" class="selectpicker">
+            <option value="Monday">Montag</option>
+            <option value="Tuesday">Dienstag</option>
+            <option value="Wednesday">Mittwoch</option>
+            <option value="Thursday">Donnerstag</option>
+            <option value="Friday">Freitag</option>
+            <option value="Saturday">Samstag</option>
+            <option value="Sunday">Sonntag</option>
+        </select> 
+
+        <table id="weekProfileTable" class="table table-striped">
+            <thead><tr><th>bis</th><th>Temperatur</th></tr></thead>
+            <tbody>
+
+            </tbody>
+        </table>
     </div>
-    
+
+    <div>
+        <button type="button" class="btn btn-outline-primary waves-effect" id="CopyProfileToDays" onclick="tblCopyProfileToDays()">
+                <span class="fa fa-clone"></span>Profil kopieren nach</button>
+
+        <select id="SelCopyProfileDays" class="selectpicker" multiple>
+            <option value="Monday">Montag</option>
+            <option value="Tuesday">Dienstag</option>
+            <option value="Wednesday">Mittwoch</option>
+            <option value="Thursday">Donnerstag</option>
+            <option value="Friday">Freitag</option>
+            <option value="Saturday">Samstag</option>
+            <option value="Sunday">Sonntag</option>
+        </select> 
+    </div>
+
+    <div>
+        <label for="downloadFile">In Datei speichern</label>
+        <button type="button" class="btn btn-outline-primary waves-effect" id="actionDownload" onclick="exportHeatingWeekProfile('heating.json')">
+                <span class="fa fa-download"></span>Download</button>
+    </div>
+
+    <div>
+        <label for="actionUpload">Aus Datei lesen</label>
+        <input  type="file" id="importLoader" onchange='readFile(this)' style="display: none;" >
+        <button type="button" class="btn btn-outline-primary waves-effect" id="actionUpload" onclick="importHeatingWeekProfile('heating.json')">
+                <span class="fa fa-upload"></span>Upload</button>
+    </div>
+
 </div>
 
 
