@@ -24,16 +24,67 @@ sitemap myhouse label="Unsere Wohnung" {
         }
 		 Text label="Heizung" icon="heating" {
             Setpoint item=LivingDining_Heating label="Wohn-Esszimmer [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-            Setpoint item=Kitchen_Heating label="Küche [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-            Setpoint item=Bathroom_Heating label="Bad [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-            Setpoint item=Office_Heating label="Büro [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-            Setpoint item=Bedroom_Heating label="Schlafzimmer [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+            Setpoint item=Kitchen_Heating label="Küche [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+            Setpoint item=Bathroom_Heating label="Bad [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+            Setpoint item=Office_Heating label="Büro [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+            Setpoint item=Bedroom_Heating label="Schlafzimmer [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
         }
 
 		Text label="Fenster" icon="window" {
 			Default item=LivingDining_Window label="Wohn-Esszimmer"
 			Default item=Kitchen_Window label="Küche"
 			Default item=Bathroom_Window label="Bad"
+		}
+	}
+
+	Frame {
+		Text label="Erweiterte Einstellungen" icon="groundfloor" { 
+			Text label="Wohnzimmer" icon="sofa" { 
+				Setpoint item=WohnzimmerWandthermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
+				Setpoint item=WohnzimmerWandthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
+				Setpoint item=WohnzimmerWandthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
+				Setpoint item=WohnzimmerWandthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
+				Setpoint item=WohnzimmerWandthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Selection item=WohnzimmerWandthermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Default item=WohnzimmerWandthermostat_1_TemperatureOffset label="Default Offset"
+				Setpoint item=WohnzimmerWandthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=WohnzimmerWandthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=WohnzimmerWandthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Selection item=WohnzimmerWandthermostat_1_ShowSetTemperature label="Anzeige" mappings=["SET_TEMPERATURE"="Soll-Temperatur", "ACTUAL_TEMPERATURE"="Ist-Temperatur"]
+			}
+			Text label="Bad" icon="bath" { 
+				Setpoint item=BadHeizthermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
+				Setpoint item=BadHeizthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
+				Setpoint item=BadHeizthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
+				Setpoint item=BadHeizthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
+				Setpoint item=BadHeizthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Selection item=BadHeizthermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Setpoint item=BadHeizthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=BadHeizthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=BadHeizthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+			}
+			Text label="Küche" icon="kitchen" { 
+				Setpoint item=KuecheHeizthermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
+				Setpoint item=KuecheHeizthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
+				Setpoint item=KuecheHeizthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
+				Setpoint item=KuecheHeizthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
+				Setpoint item=KuecheHeizthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Selection item=KuecheHeizthermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Setpoint item=KuecheHeizthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=KuecheHeizthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=KuecheHeizthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+			}
+			Text label="Büro" icon="office" { 
+				Setpoint item=BueroThermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
+				Setpoint item=BueroThermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
+				Setpoint item=BueroThermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
+				Setpoint item=BueroThermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
+				Setpoint item=BueroThermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Selection item=BueroThermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Setpoint item=BueroThermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=BueroThermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+				Setpoint item=BueroThermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
+			}
 		}
 	}
 }
