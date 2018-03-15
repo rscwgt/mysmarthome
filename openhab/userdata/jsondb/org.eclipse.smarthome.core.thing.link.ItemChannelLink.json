@@ -2212,6 +2212,24 @@
       "itemName": "WohnzimmerWandthermostat_0_SignalstRke"
     }
   },
+  "BueroHeizthermostat_0_Firmware -\u003e homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:0#FIRMWARE": {
+    "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
+    "value": {
+      "channelUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-3",
+          "7e0bd100",
+          "LEQ1338797",
+          "0#FIRMWARE"
+        ]
+      },
+      "configuration": {
+        "properties": {}
+      },
+      "itemName": "BueroHeizthermostat_0_Firmware"
+    }
+  },
   "BadHeizthermostat_1_DecalcificationWeekday -\u003e homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#DECALCIFICATION_WEEKDAY": {
     "class": "org.eclipse.smarthome.core.thing.link.ItemChannelLink",
     "value": {

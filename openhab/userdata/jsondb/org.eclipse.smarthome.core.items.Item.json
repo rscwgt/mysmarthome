@@ -1226,6 +1226,15 @@
       "category": "Contact"
     }
   },
+  "BueroHeizthermostat_0_Firmware": {
+    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [],
+      "label": "Firmware"
+    }
+  },
   "BueroThermostat_1_PartyStopMonth": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
