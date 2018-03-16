@@ -158,6 +158,7 @@ function readFile(filePath) {
         var reader = new FileReader();
         reader.onload = function (e) {
             var data = e.target.result;
+            Adapter.onGetHeatingWeekProfile(data.room, data.data);
         };
         reader.readAsText(filePath.files[0]);
     }
