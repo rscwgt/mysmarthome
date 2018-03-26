@@ -42,7 +42,7 @@ sitemap myhouse label="Unsere Wohnung" {
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
-				Setpoint item=WohnzimmerWandthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.55
+				Setpoint item=WohnzimmerWandthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
 				Selection item=WohnzimmerWandthermostat_1_ControlMode label="Wand Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
 				Selection item=WohnzimmerTerrasseHeizthermostat_1_ControlMode label="Terrasse Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
 				Selection item=WohnzimmerInnenHeizthermostat_1_ControlMode label="Innen Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
@@ -51,6 +51,10 @@ sitemap myhouse label="Unsere Wohnung" {
 				Setpoint item=WohnzimmerWandthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
 				Selection item=WohnzimmerWandthermostat_1_ShowSetTemperature label="Anzeige" mappings=["SET_TEMPERATURE"="Soll-Temperatur", "ACTUAL_TEMPERATURE"="Ist-Temperatur"]
 				Selection item=WohnzimmerWandthermostat_1_TemperatureOffset label="Temperatur-Offset (- wärmer)" mappings=["-3.5K"="-3.5K","-3.0K"="-3.0K","-2.5K"="-2.5K","-2.0K"="-2.0K","-1.5K"="-1.5K","-1.0K"="-1.0K","-0.5K"="-0.5K","0.0K"="0.0K","0.5K"="0.5K","1.0K"="1.0K","1.5K"="1.5K","2.0K"="2.0K","2.5"="2.5","3.0K"="3.0K","3.5K"="3.5K"]
+				Setpoint item=WohnzimmerWandthermostat_1_ManuMode label="Manu-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+				Switch item=WohnzimmerWandthermostat_1_AutoMode label="Wand Auto Modus" icon="light"
+				Switch item=WohnzimmerTerrasseHeizthermostat_1_AutoMode label="Terrasse Auto Modus" icon="light"
+				Switch item=WohnzimmerInnenHeizthermostat_1_AutoMode label="Innen Auto Modus" icon="light"
 			}
 			
 			Text label="Schlafzimmer" icon="bedroom" { 
