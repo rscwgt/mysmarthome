@@ -18,14 +18,12 @@ sitemap myhouse label="Unsere Wohnung" {
         Text label="Temperatur" icon="temperature" {
             Default item=LivingDining_Temperature label="Wohn-Esszimmer"
             Default item=Kitchen_Temperature label="Küche"
-            Default item=Bathroom_Temperature label="Bad"
             Default item=Office_Temperature label="Büro"
             Default item=Bedroom_Temperature label="Schlafzimmer"
         }
 		 Text label="Heizung" icon="heating" {
             Setpoint item=LivingDining_Heating label="Wohn-Esszimmer [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
             Setpoint item=Kitchen_Heating label="Küche [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
-            Setpoint item=Bathroom_Heating label="Bad [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
             Setpoint item=Office_Heating label="Büro [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
             Setpoint item=Bedroom_Heating label="Schlafzimmer [%.1f °C]" minValue=4.5 maxValue=24.0 step=0.5
         }
@@ -44,8 +42,10 @@ sitemap myhouse label="Unsere Wohnung" {
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
 				Setpoint item=WohnzimmerWandthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
-				Setpoint item=WohnzimmerWandthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-				Selection item=WohnzimmerWandthermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Setpoint item=WohnzimmerWandthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.55
+				Selection item=WohnzimmerWandthermostat_1_ControlMode label="Wand Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Selection item=WohnzimmerTerrasseHeizthermostat_1_ControlMode label="Terrasse Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Selection item=WohnzimmerInnenHeizthermostat_1_ControlMode label="Innen Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
 				Setpoint item=WohnzimmerWandthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
 				Setpoint item=WohnzimmerWandthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
 				Setpoint item=WohnzimmerWandthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
@@ -53,16 +53,17 @@ sitemap myhouse label="Unsere Wohnung" {
 				Selection item=WohnzimmerWandthermostat_1_TemperatureOffset label="Temperatur-Offset (- wärmer)" mappings=["-3.5K"="-3.5K","-3.0K"="-3.0K","-2.5K"="-2.5K","-2.0K"="-2.0K","-1.5K"="-1.5K","-1.0K"="-1.0K","-0.5K"="-0.5K","0.0K"="0.0K","0.5K"="0.5K","1.0K"="1.0K","1.5K"="1.5K","2.0K"="2.0K","2.5"="2.5","3.0K"="3.0K","3.5K"="3.5K"]
 			}
 			
-			Text label="Bad" icon="bath" { 
-				Setpoint item=BadHeizthermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
-				Setpoint item=BadHeizthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
-				Setpoint item=BadHeizthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
-				Setpoint item=BadHeizthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
-				Setpoint item=BadHeizthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-				Setpoint item=BadHeizthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-				Setpoint item=BadHeizthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-				Setpoint item=BadHeizthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
-				Selection item=BadHeizthermostat_1_TemperatureOffset label="Temperatur-Offset (- wärmer)" mappings=["-3.5K"="-3.5K","-3.0K"="-3.0K","-2.5K"="-2.5K","-2.0K"="-2.0K","-1.5K"="-1.5K","-1.0K"="-1.0K","-0.5K"="-0.5K","0.0K"="0.0K","0.5K"="0.5K","1.0K"="1.0K","1.5K"="1.5K","2.0K"="2.0K","2.5"="2.5","3.0K"="3.0K","3.5K"="3.5K"]
+			Text label="Schlafzimmer" icon="bedroom" { 
+				Setpoint item=SchlafzimmerHeizthermostat_1_PartyStopDay label="Party-Tag [%d]" minValue=1 maxValue=31 step=1
+				Setpoint item=SchlafzimmerHeizthermostat_1_PartyStopMonth label="Party-Monat [MAP(month.map):%s]" minValue=1 maxValue=12 step=1
+				Setpoint item=SchlafzimmerHeizthermostat_1_PartyStopYear label="Party-Jahr [%d]" minValue=1 maxValue=22 step=1
+				Setpoint item=SchlafzimmerHeizthermostat_1_PartyStopTime label="Party-Uhrzeit [MAP(hour.map):%s]" minValue=0 maxValue=1380 step=60
+				Setpoint item=SchlafzimmerHeizthermostat_1_PartyTemperature label="Party-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+			    Selection item=SchlafzimmerHeizthermostat_1_ControlMode label="Control-Mode" mappings=["AUTO-MODE"="Auto-Mode", "MANU-MODE"="Manu-Mode", "PARTY-MODE"="Party-Mode", "BOOST-MODE"="Boost-Mode"]
+				Setpoint item=SchlafzimmerHeizthermostat_1_WindowOpenTemperature label="Fenster-Offen-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+				Setpoint item=SchlafzimmerHeizthermostat_1_ComfortTemperature label="Komfort-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+				Setpoint item=SchlafzimmerHeizthermostat_1_MaxTemperature label="Max-Temperatur [%.1f °C]" minValue=5.0 maxValue=24.0 step=0.5
+				Selection item=SchlafzimmerHeizthermostat_1_TemperatureOffset label="Temperatur-Offset (- wärmer)" mappings=["-3.5K"="-3.5K","-3.0K"="-3.0K","-2.5K"="-2.5K","-2.0K"="-2.0K","-1.5K"="-1.5K","-1.0K"="-1.0K","-0.5K"="-0.5K","0.0K"="0.0K","0.5K"="0.5K","1.0K"="1.0K","1.5K"="1.5K","2.0K"="2.0K","2.5"="2.5","3.0K"="3.0K","3.5K"="3.5K"]
 			}
 			
 			Text label="Küche" icon="kitchen" { 
@@ -100,7 +101,7 @@ sitemap myhouse label="Unsere Wohnung" {
 				Default item=KuecheFensterkontakt_0_NiedrigerBatteriestatus label="Küche Fensterkontakt"
 				Default item=KuecheHeizthermostat_0_NiedrigerBatteriestatus label="Küche Heizthermostat"
 				Default item=BadFensterkontakt_0_NiedrigerBatteriestatus label="Bad Fensterkontakt"
-				Default item=BadHeizthermostat_0_NiedrigerBatteriestatus label="Bad Heizthermostat"
+				Default item=SchlafzimmerHeizthermostat_0_NiedrigerBatteriestatus label="Schlafzimmer Heizthermostat"
 			}
 		} 
 	}
