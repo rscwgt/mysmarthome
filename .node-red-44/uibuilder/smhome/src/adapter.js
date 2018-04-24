@@ -138,7 +138,16 @@ Adapter.convertConfToJson = function(data) {
         return null;
     }
 
-    var result = [];
+//    var result = [];
+    var result = {};
+    result.MONDAY = []; 
+    result.TUESDAY = [];
+    result.WEDNESDAY = [];
+    result.THURSDAY = [];
+    result.FRIDAY = [];
+    result.SATURDAY = [];
+    result.SUNDAY = [];
+    var arrIndex = 0;
     for (var key in data) {
         if (data.hasOwnProperty(key)) {
             var day = Adapter.getConfDay(key);
@@ -147,7 +156,8 @@ Adapter.convertConfToJson = function(data) {
             var value = data[key];
 //            console.log(key + " -> " + day + ";" + type + ";" + nr);
             if (day && type && nr>0) {
-                Adapter.setConfValue(result, day, nr-1, type, value);
+                Adapter.setConfValue(result, arrIndex, day, nr-1, type, value);
+                arrIndex++;
             }
         }
     }
@@ -161,7 +171,7 @@ Adapter.convertDataToConf = function(data) {
         for (var index=0; index < items.length; index++) {
             var time = items[index].endtime;
             var h = Math.floor(time/100);
-            var min = time % 60;
+            var min = time % 100;
             var prop = "ENDTIME_"+day+"_"+(index+1);
             result[prop] = h*60+min;
             prop = "TEMPERATURE_"+day+"_"+(index+1);
@@ -173,7 +183,7 @@ Adapter.convertDataToConf = function(data) {
     return result;
 }
 
-Adapter.setConfValue = function(confArray, day, index, type, value) {
+Adapter.setConfValue = function(confArray, arrIndex, day, index, type, value) {
     if (!confArray[day]) {
         confArray[day] = [];
     }

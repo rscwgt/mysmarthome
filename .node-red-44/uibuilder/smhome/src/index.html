@@ -9,13 +9,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <!--
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    -->
-    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<!--    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
--->
 
     <!-- Material Design Bootstrap -->
     <link href="vendor/mdbootstrap/css/mdb.min.css" rel="stylesheet">
@@ -28,7 +22,6 @@
     <link rel="apple-touch-icon" href="http://static.mindmup.com/img/apple-touch-icon.png" />
     <link rel="shortcut icon" href="http://static.mindmup.com/img/favicon.ico" >
     <link href="external/google-code-prettify/prettify.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bootstrap-select-1.13.0-beta/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
@@ -37,259 +30,182 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
-<!--    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
--->    
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">    
     <!-- rsc_sidebar -->
 
-    <!--
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
-    -->
-	<!--	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet"> -->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
-    <!-- <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script> -->
-    <!-- These MUST be in the right order. Note no leading / -->
+    <link rel="stylesheet" href="vendor/bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-slider/dist/css/bootstrap-slider.min.css" />
 
+    <link href="css/index.css" rel="stylesheet">
+    
 </head>
 
 <body>
 
-        <header>
+    <header>
 
-            <nav id="sidebar">
-                <div id="dismiss">
-                    <i class="fa fa-arrow-circle-left" style="font-size:24px"></i>
-                </div>
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-circle-left" style="font-size:24px"></i>
+            </div>
 
-                <div class="sidebar-header">
-                    <h3>Unser SmartHome</h3>
-                </div>
+            <div class="sidebar-header">
+                <h3>Unser SmartHome</h3>
+            </div>
 
-                <ul class="list-unstyled components">
-                    <p>Dummy Heading</p>
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">SmartHome</a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#" data-page="tblWeekProfile">Wochenprofil</a></li>
-                            <li><a href="#">Partytime</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="list-unstyled CTAs">
-                    <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
-                    <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
-                </ul>
-            </nav>
-    
-                    
-            <!--Navbar-->
-        <!--Navbar-->
-<!--            
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                        <i class="fa fa-bars" style="font-size:24px"></i>
-                        <span>Open Sidebar</span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">SmartHome</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#" data-page="tblWeekProfile">Wochenprofil</a></li>
+                        <li><a href="#" data-page="party">Partytime</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-    -->        
-<!--
-        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-            <a class="navbar-brand" id="sidebarCollapse" href="#"><i class="fa fa-bars" style="font-size:24px"></i></a>
+                </li>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Page</a></li>
-                </ul>
-            </div>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
         </nav>
-    -->
+
+                    
        <!--Navbar-->
        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand" id="sidebarCollapse" href="#"><i class="fa fa-bars" style="font-size:24px"></i></a>
+            <!-- Navbar brand -->
+            <a class="navbar-brand" id="sidebarCollapse" href="#"><i class="fa fa-bars" style="font-size:24px"></i></a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <span class="navbar-brand"><i class="fa fa-home" style="font-size:24px"></i> </span>
+            <span class="navbar-brand">Our SmartHome Admin</span>
 
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="#" data-page="tblWeekProfile">Wochenprofil</a>
-                </li>
-
-            </ul>
-            <!-- Links -->
-
-            <form class="form-inline">
-                <div class="md-form mt-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                </div>
-            </form>
-        </div>
-        <!-- Collapsible content -->
-
-    </nav>
-    <!--/.Navbar-->   
+        </nav>
+        <!--/.Navbar-->   
 
     </header>
     
-        <div id="container"></div>
+    <div id="container"></div>
     
      
-        <!-- /Start your project here-->
-    
-        <!-- SCRIPTS -->
-    <!-- REQUIRED: Socket.IO is loaded only once for all instances
-        Without this, you don't get a websocket connection -->
-        <script src="/uibuilder/socket.io/socket.io.js"></script>
-        <!-- Note no leading / -->
-        <!-- OPTIONAL: JQuery can be removed if not required -->
-        <script src="vendor/jquery/dist/jquery.min.js"></script> 
-        
-        <script src="uibuilderfe.js"></script>   <!-- //dev version -->
-        
-        <!-- JQuery -->
-        <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="vendor/popper.js/dist/umd/popper.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="vendor/mdbootstrap/js/mdb.min.js"></script>
-        
-            <script src="external/google-code-prettify/prettify.js"></script>
-        
-        
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="bootstrap-select-1.13.0-beta/js/bootstrap-select.js"></script>
+    <!-- /Start your project here-->
 
-        <!-- (Optional) Latest compiled and minified JavaScript translation files -->
-        <!--    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-de_DE.min.js"></script>
-        -->
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-            
-            
-        <script src="mindmup-editabletable.js"></script>
-        <script src="numeric-input-example.js"></script>    
-        
-        <!-- <script src="index.js"></script> -->
-        <script src="tblWeekProfile.js"></script>
-        
-        <script src="adapter.js"></script>
-            
-            
-        <script>
+    <!-- SCRIPTS -->
+<!-- REQUIRED: Socket.IO is loaded only once for all instances
+    Without this, you don't get a websocket connection -->
+    <script src="/uibuilder/socket.io/socket.io.js"></script>
+    <!-- Note no leading / -->
+    <!-- OPTIONAL: JQuery can be removed if not required -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script> 
     
-            console.log("jQuery version "+window.jQuery.fn.jquery);
-            Adapter.test();
+    <script src="uibuilderfe.js"></script>   <!-- //dev version -->
     
-            $(document).ready(function() {
-                $(".container").load("home.html");
-            });
-            
-            $(document).ready(function() {
-                $(".container").load("features.html");
-            });
-            
-            $(document).ready(function() {
-                $(".container").load("table.html");
-            });
-            
-            $(document).ready(function() {
-                $(".container").load("tblWeekProfile.html");
-            });
-            
-            $(document).ready(function() {
-                $(".container").load("tab.html");
-            });
-            
-            $(document).ready(function() {
-                $('.selectpicker').selectpicker();
-            });
-    
-        </script>
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="vendor/popper.js/dist/umd/popper.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
+    <script type="text/javascript" src="vendor/moment/min/moment-with-locales.min.js"></script>
 
-                $('#dismiss, .overlay').on('click', function () {
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap4-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+    
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="vendor/mdbootstrap/js/mdb.min.js"></script>
+    
+        <script src="external/google-code-prettify/prettify.js"></script>
+    
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script  type="text/javascript" src="bootstrap-select-1.13.0-beta/js/bootstrap-select.js"></script>
+
+    <script  type="text/javascript" src="vendor/bootstrap-slider/dist/bootstrap-slider.js"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        
+        
+    <script src="mindmup-editabletable.js"></script>
+    <script src="numeric-input-example.js"></script>    
+    
+    <!-- <script src="index.js"></script> -->
+    <script src="tblWeekProfile.js"></script>
+    
+    <script src="adapter.js"></script>
+
+    <script src="party.js"></script>
+        
+        
+    <script>
+
+        console.log("jQuery version "+window.jQuery.fn.jquery);
+        Adapter.test();
+
+        $(document).ready(function() {
+            $(".container").load("tblWeekProfile.html");
+            $(".container").load("party.html");
+        });
+        
+        $(document).ready(function() {
+            $('.selectpicker').selectpicker();
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').fadeOut();
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').fadeIn();
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+            $("#sidebar #homeSubmenu li").each(function() {
+                $(this).on("click", function(item){
+                    var fi=$("#sidebar #homeSubmenu li").find(".active");
+                    fi.removeClass("active");
+                    $(this).addClass("active");
+                    var page = item.target.getAttribute("data-page");
+                    if (page) {
+                        var container = $("#container");
+                        container.load(page+".html");
+                    }
                     $('#sidebar').removeClass('active');
                     $('.overlay').fadeOut();
                 });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').addClass('active');
-                    $('.overlay').fadeIn();
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-
-                $("#sidebar #homeSubmenu li").each(function() {
-                    $(this).on("click", function(item){
-                        var fi=$("#sidebar #homeSubmenu li").find(".active");
-                        fi.removeClass("active");
-                        $(this).addClass("active");
-                        var page = item.target.getAttribute("data-page");
-                        if (page) {
-                            var container = $("#container");
-                            container.load(page+".html");
-                        }
-                        $('#sidebar').removeClass('active');
-                        $('.overlay').fadeOut();
-                    });
-                });
             });
-        </script>
-            
-    </body>
-    
-    
-    
-    </html>
+        });
+
+    </script>
+        
+</body>
+
+</html>
     

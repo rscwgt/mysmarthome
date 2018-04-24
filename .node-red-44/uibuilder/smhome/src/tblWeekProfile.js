@@ -116,6 +116,60 @@ tblCopyProfileToDays = function() {
     });
 }
 
+function downloadHeatingWeekProfile(data, filename) {
+    var jsonFile;
+    var downloadLink;
+
+    // JSON file
+    jsonFile = new Blob([data], {type: "application/json"});
+
+    // Download link
+    downloadLink = document.createElement("a");
+
+    // File name
+    downloadLink.download = filename;
+
+    // Create a link to the file
+    downloadLink.href = window.URL.createObjectURL(jsonFile);
+
+    // Hide download link
+    downloadLink.style.display = "none";
+
+    // Add the link to DOM
+    document.body.appendChild(downloadLink);
+
+    // Click download link
+    downloadLink.click();
+}
+
+function exportHeatingWeekProfile(filename) {
+    var data = {};
+    var room = getSelectedRoomId();
+    data.room = room;
+    var profileData = tblGetProfileData();
+    data.data = profileData;
+    var blob = JSON.stringify(data);
+    // Download CSV file
+    downloadHeatingWeekProfile(blob, filename);
+}
+
+function readFile(filePath) {
+    if(filePath.files && filePath.files[0]) {           
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var data = e.target.result;
+            Adapter.onGetHeatingWeekProfile(data.room, data.data);
+        };
+        reader.readAsText(filePath.files[0]);
+    }
+}
+
+function importHeatingWeekProfile(fname) {
+    var floader = $("#importLoader");
+    floader.val("");
+    floader.click();
+}
+
 getSelectedRoomId = function() {
     var grp = $('#roomChooseGroup');
 //    var item = grp.find('input[name="roomChoose"]:checked');

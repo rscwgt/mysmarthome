@@ -15,17 +15,15 @@ Number    Kitchen_Temperature        "Temperatur"       <temperature>   (Kitchen
 Number    Kitchen_Heating            "Heizung"          <heating>       (Kitchen, gHeating)               {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
 Contact   Kitchen_Window             "Fenster"          <window>        (Kitchen, gWindow)                {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE"}
 
-Number    Bathroom_Temperature       "Temperatur"       <temperature>   (Bathroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
-Number    Bathroom_Heating           "Heizung"          <heating>       (Bathroom, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
 Contact   Bathroom_Window            "Fenster"          <window>        (Bathroom, gWindow)               {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE"}
 
 Number    Office_Temperature       "Temperatur"       <temperature>   (Office, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
 Number    Office_Heating           "Heizung"          <heating>       (Office, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
 
-Number    Bedroom_Temperature       "Temperatur"       <temperature>   (Bedroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ1585205:1#ACTUAL_TEMPERATURE"}
-Number    Bedroom_Heating           "Heizung"          <heating>       (Bedroom, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ1585205:1#SET_TEMPERATURE"}
+Number    Bedroom_Temperature       "Temperatur"       <temperature>   (Bedroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
+Number    Bedroom_Heating           "Heizung"          <heating>       (Bedroom, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
 
-Group:Number:AVG                 gTemperature   "Temperatur"   <temperature>   (Home)
-Group:Number:AVG                 gHeating       "Heizung"      <heating>       (Home)
+Group:Number                 gTemperature   "Temperatur"   <temperature>   (Home)
+Group:Number                 gHeating       "Heizung"      <heating>       (Home)
 Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"      <window>        (Home)
-Group:Number:AVG				 gBatteryState	 "Batteriezustand [%d]n" (Home)
+Group:Number				 gBatteryState	 "Batteriezustand [%d]n" (Home)

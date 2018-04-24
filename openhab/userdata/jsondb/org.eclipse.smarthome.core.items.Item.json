@@ -26,13 +26,14 @@
       "label": "Party Stop Year"
     }
   },
-  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday": {
+  "BueroThermostat_1_BoostMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
-      "itemType": "String",
+      "itemType": "Switch",
       "tags": [],
-      "label": "Decalcification Weekday"
+      "label": "Boost Mode",
+      "category": "Switch"
     }
   },
   "KuecheHeizthermostat_1_PartyTemperature": {
@@ -45,24 +46,13 @@
       "category": "Temperature"
     }
   },
-  "BueroThermostat_1_BoostMode": {
+  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
-      "itemType": "Switch",
+      "itemType": "String",
       "tags": [],
-      "label": "Boost Mode",
-      "category": "Switch"
-    }
-  },
-  "BadHeizthermostat_1_MaxTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Max Temperature",
-      "category": "Temperature"
+      "label": "Decalcification Weekday"
     }
   },
   "SchlafzimmerHeizthermostat_1_EcoTemperature": {
@@ -112,15 +102,6 @@
       "label": "Decalcification Weekday"
     }
   },
-  "BadHeizthermostat_1_PartyStopDay": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Party Stop Day"
-    }
-  },
   "SchlafzimmerHeizthermostat_1_ControlMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -159,15 +140,6 @@
       "category": "Temperature"
     }
   },
-  "BadHeizthermostat_1_PartyStopYear": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Party Stop Year"
-    }
-  },
   "WohnzimmerInnenHeizthermostat_1_PartyStopTime": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -175,15 +147,6 @@
       "itemType": "Number",
       "tags": [],
       "label": "Party Stop Time"
-    }
-  },
-  "BadHeizthermostat_1_ControlMode": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "String",
-      "tags": [],
-      "label": "Control Mode"
     }
   },
   "BueroThermostat_1_PartyStopTime": {
@@ -232,16 +195,6 @@
       "label": "Boost Position"
     }
   },
-  "BadHeizthermostat_1_ComfortTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Comfort Temperature",
-      "category": "Temperature"
-    }
-  },
   "WohnzimmerWandthermostat_0_SignalstRke": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -250,16 +203,6 @@
       "tags": [],
       "label": "Signalstärke",
       "category": "QualityOfService"
-    }
-  },
-  "BadHeizthermostat_1_SetTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Set Temperature",
-      "category": "Temperature"
     }
   },
   "KuecheFensterkontakt_0_SignalStrength": {
@@ -328,16 +271,6 @@
       "itemType": "Number",
       "tags": [],
       "label": "Party Stop Month"
-    }
-  },
-  "BadHeizthermostat_0_NiedrigerBatteriestatus": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Switch",
-      "tags": [],
-      "label": "Niedriger Batteriestatus",
-      "category": "Battery"
     }
   },
   "WohnzimmerTerrasseHeizthermostat_1_EcoTemperature": {
@@ -648,15 +581,6 @@
       "label": "Manu Mode"
     }
   },
-  "BadHeizthermostat_1_DecalcificationTime": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Decalcification Time"
-    }
-  },
   "WohnzimmerTerrasseHeizthermostat_1_MaxTemperature": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -665,26 +589,6 @@
       "tags": [],
       "label": "Max Temperature",
       "category": "Temperature"
-    }
-  },
-  "BadHeizthermostat_1_AutoMode": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Switch",
-      "tags": [],
-      "label": "Auto Mode",
-      "category": "Switch"
-    }
-  },
-  "SchlafzimmerHeizthermostat_0_SignalStrength": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Signal Strength",
-      "category": "QualityOfService"
     }
   },
   "SchlafzimmerHeizthermostat_1_SetTemperature": {
@@ -716,15 +620,6 @@
       "label": "Party Stop Day"
     }
   },
-  "BadHeizthermostat_1_ValveState": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Valve State"
-    }
-  },
   "KuecheHeizthermostat_1_BoostMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -744,17 +639,17 @@
       "label": "Party Stop Time"
     }
   },
-  "BadHeizthermostat_1_TemperatureOffset": {
+  "WohnzimmerTerrasseHeizthermostat_1_AutoMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
-      "itemType": "String",
+      "itemType": "Switch",
       "tags": [],
-      "label": "Temperature Offset",
-      "category": "Temperature"
+      "label": "Auto Mode",
+      "category": "Switch"
     }
   },
-  "WohnzimmerTerrasseHeizthermostat_1_AutoMode": {
+  "WohnzimmerInnenHeizthermostat_1_AutoMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
@@ -849,15 +744,6 @@
       "category": "Switch"
     }
   },
-  "BadHeizthermostat_1_ManuMode": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Manu Mode"
-    }
-  },
   "WohnzimmerWandthermostat_1_MaxTemperature": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -875,16 +761,6 @@
       "itemType": "Number",
       "tags": [],
       "label": "Boost Position"
-    }
-  },
-  "BadHeizthermostat_1_PartyTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Party Temperature",
-      "category": "Temperature"
     }
   },
   "WohnzimmerWandthermostat_1_PartyStopTime": {
@@ -933,16 +809,6 @@
       "label": "Manu Mode"
     }
   },
-  "BadHeizthermostat_1_WindowOpenTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Window Open Temperature",
-      "category": "Temperature"
-    }
-  },
   "KuecheFensterkontakt_0_NiedrigerBatteriestatus": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -963,15 +829,6 @@
       "category": "Temperature"
     }
   },
-  "BadHeizthermostat_1_BoostPosition": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Boost Position"
-    }
-  },
   "BueroThermostat_1_Locked": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -980,25 +837,6 @@
       "tags": [],
       "label": "Locked",
       "category": "Switch"
-    }
-  },
-  "BadHeizthermostat_1_PartyStopMonth": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Party Stop Month"
-    }
-  },
-  "BadHeizthermostat_1_EcoTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Eco Temperature",
-      "category": "Temperature"
     }
   },
   "WohnzimmerWandthermostat_1_TemperatureOffset": {
@@ -1136,16 +974,6 @@
       "label": "Party Stop Time"
     }
   },
-  "BadHeizthermostat_1_ActualTemperature": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Actual Temperature",
-      "category": "Temperature"
-    }
-  },
   "KuecheHeizthermostat_1_WindowOpenTemperature": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -1164,16 +992,6 @@
       "tags": [],
       "label": "Max Temperature",
       "category": "Temperature"
-    }
-  },
-  "SchlafzimmerHeizthermostat_0_LowBattery": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Switch",
-      "tags": [],
-      "label": "Low Battery",
-      "category": "Battery"
     }
   },
   "BadFensterkontakt_1_State": {
@@ -1226,6 +1044,15 @@
       "category": "Contact"
     }
   },
+  "BueroHeizthermostat_0_Firmware": {
+    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "String",
+      "tags": [],
+      "label": "Firmware"
+    }
+  },
   "BueroThermostat_1_PartyStopMonth": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -1242,15 +1069,6 @@
       "itemType": "Number",
       "tags": [],
       "label": "Party Stop Year"
-    }
-  },
-  "BadHeizthermostat_1_PartyStopTime": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Number",
-      "tags": [],
-      "label": "Party Stop Time"
     }
   },
   "BueroThermostat_1_WindowOpenTemperature": {
@@ -1271,24 +1089,6 @@
       "tags": [],
       "label": "Niedriger Batteriestatus",
       "category": "Battery"
-    }
-  },
-  "BadHeizthermostat_1_DecalcificationWeekday": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "String",
-      "tags": [],
-      "label": "Decalcification Weekday"
-    }
-  },
-  "BadHeizthermostat_1_BoostTimePeriod": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "String",
-      "tags": [],
-      "label": "Boost Time Period"
     }
   },
   "KuecheHeizthermostat_1_BoostPosition": {
@@ -1367,6 +1167,16 @@
       "category": "Battery"
     }
   },
+  "SchlafzimmerHeizthermostat_0_NiedrigerBatteriestatus": {
+    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Niedriger Batteriestatus",
+      "category": "Battery"
+    }
+  },
   "WohnzimmerTerrasseHeizthermostat_1_ControlMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -1383,16 +1193,6 @@
       "itemType": "Number",
       "tags": [],
       "label": "Valve State"
-    }
-  },
-  "BadHeizthermostat_1_BoostMode": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Switch",
-      "tags": [],
-      "label": "Boost Mode",
-      "category": "Switch"
     }
   },
   "BueroThermostat_1_ActualTemperature": {
