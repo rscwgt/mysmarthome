@@ -23,6 +23,11 @@ Number    Office_Heating           "Heizung"          <heating>       (Office, g
 Number    Bedroom_Temperature       "Temperatur"       <temperature>   (Bedroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
 Number    Bedroom_Heating           "Heizung"          <heating>       (Bedroom, gHeating)              {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
 
+Number Bathroom_Temperature "[%.2f °C]" <temperature> { mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Wandthermostat/ActualTemperature:state:default]" }
+Number Terrace_Temperature "[%.2f °C]" <temperature> { mqtt="<[raspimqtt:msgHomematicIp/plain/Terrasse_Temperatur-_und_Luftfeuchtigkeitssensor/ActualTemperature:state:default]" }
+String   Bathroom_Window2            "FensterIp [%s]"          <window>        (Bathroom)     { mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Fenster-_und_Türkontakt/WindowState:state:default]" }
+
+
 Group:Number                 gTemperature   "Temperatur"   <temperature>   (Home)
 Group:Number                 gHeating       "Heizung"      <heating>       (Home)
 Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"      <window>        (Home)
