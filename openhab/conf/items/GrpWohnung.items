@@ -1,34 +1,42 @@
-Group     GrpWohnung                       "Unsere Wohnung"   <house>
+Group     GrpWohnung                      "Unsere Wohnung"   <house>
 
-Group     LivingDining               "Wohn-Esszimmer"   <sofa>          (Home)
-Group     Kitchen                    "Küche"            <kitchen>       (Home)
-Group     Bathroom                   "Bad"       <bath>          (Home)
-Group     Office                     "Büro"       <office>          (Home)
-Group     Bedroom                     "Schlafzimmer"       <bedroom>          (Home)
+Group     LivingDining                    "Wohn-Esszimmer"   <sofa>          (Home)
+Group     Kitchen                         "Küche"           <kitchen>       (Home)
+Group     Bathroom                        "Bad"              <bath>          (Home)
+Group     Office                          "Büro"            <office>        (Home)
+Group     Bedroom                         "Schlafzimmer"     <bedroom>       (Home)
 
-Number    LivingDining_Temperature   "[%.2f °C]"       <temperature>   (LivingDining, gTemperature)      {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
-Number    LivingDining_Heating       "Heizung" <heating> (LivingDining, gHeating)  ["TargetTemperature"]     {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
-Contact   LivingDining_Window        "Fenster"          <window>        (LivingDining, gWindow)           {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:1#STATE"}
-Number   LivingDining_BatteryState   "Batteriezustand"          <window>        (LivingDining, gBatteryState)           {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#LOWBAT"}
+Group:Number                     gTemperature   "Temperatur"           <temperature>   (Home) ["Thermostat"]
+Group:Number                     gHeating       "Heizung"              <heating>       (Home) ["Thermostat"]
+Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"              <window>        (Home)
+Group:Number				     gBatteryState	"Batteriezustand [%d]" (Home)
 
-Number    Kitchen_Temperature        "Temperatur"       <temperature>   (Kitchen, gTemperature)           {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
-Number    Kitchen_Heating            "Heizung"          <heating>       (Kitchen, gHeating)  ["TargetTemperature"]  {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
-Contact   Kitchen_Window             "Fenster"          <window>        (Kitchen, gWindow)                {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE"}
+Number    LivingDining_Temperature        "[%.1f °C]"            <temperature>   (LivingDining, gTemperature)  {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
+Number    LivingDining_Temperature_Label1 "Wohnzimmer Temperatur" ["CurrentTemperature"]                        {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
+Number    LivingDining_Heating            "[%.1f °C]"            <heating>       (LivingDining, gHeating)      {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
+Number    LivingDining_Heating_Label1     "Wohnzimmer Heizung"    ["TargetTemperature"]                         {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
+Contact   LivingDining_Window             "Fenster"               <window>        (LivingDining, gWindow)       {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:1#STATE"}
+Number    LivingDining_BatteryState       "Batteriezustand"       <window>        (LivingDining, gBatteryState) {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#LOWBAT"}
 
-Contact   Bathroom_Window            "Fenster"          <window>        (Bathroom, gWindow)               {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE"}
+Number    Kitchen_Temperature             "[%.1f °C]"            <temperature>   (Kitchen, gTemperature)       {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
+Number    Kitchen_Temperature_Label1      "Kueche Temperatur"     ["CurrentTemperature"]                        {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
+Number    Kitchen_Heating                 "[%.1f °C]"            <heating>       (Kitchen, gHeating)           {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
+Number    Kitchen_Heating_Label1          "Kueche Heizung"        ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
+Contact   Kitchen_Window                  "Fenster"               <window>        (Kitchen, gWindow)            {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE"}
 
-Number    Office_Temperature       "Temperatur"       <temperature>   (Office, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
-Number    Office_Heating           "Heizung"          <heating>       (Office, gHeating) ["TargetTemperature"]   {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
+Number    Office_Temperature              "[%.1f °C]"            <temperature>   (Office, gTemperature)        {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
+Number    Office_Temperature_Label1       "Buero Temperatur"      ["CurrentTemperature"]                        {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
+Number    Office_Heating                  "[%.1f °C]"            <heating>       (Office, gHeating)            {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
+Number    Office_Heating_Label1           "Buero Heizung"         ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
 
-Number    Bedroom_Temperature       "Temperatur"       <temperature>   (Bedroom, gTemperature)          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
-Number    Bedroom_Heating           "Heizung"          <heating>       (Bedroom, gHeating) ["TargetTemperature"]   {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
+Number    Bedroom_Temperature             "[%.1f °C]"            <temperature>   (Bedroom, gTemperature)       {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
+Number    Bedroom_Temperature_Label1      "Schlafzimmer Temperatur" ["CurrentTemperature"]                      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
+Number    Bedroom_Heating                 "[%.1f °C]"            <heating>       (Bedroom, gHeating)           {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
+Number    Bedroom_Heating_Label1          "Schlafzimmer Heizung"  ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
 
-Number Bathroom_Temperature "[%.2f °C]" <temperature> { mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Wandthermostat/ActualTemperature:state:default]" }
-Number Terrace_Temperature "[%.2f °C]" <temperature> { mqtt="<[raspimqtt:msgHomematicIp/plain/Terrasse_Temperatur-_und_Luftfeuchtigkeitssensor/ActualTemperature:state:default]" }
-String   Bathroom_Window2            "FensterIp [%s]"          <window>        (Bathroom)     { mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Fenster-_und_Türkontakt/WindowState:state:default]" }
+Number    Bathroom_Temperature            "[%.1f °C]"            <temperature>   (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Wandthermostat/ActualTemperature:state:default]"}
+Contact   Bathroom_Window                 "Fenster"               <window>        (Bathroom, gWindow)           {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE"}
+String    Bathroom_Window2                "FensterIp [%s]"        <window>        (Bathroom, gWindow)           {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Fenster-_und_Türkontakt/WindowState:state:default]"}
 
+Number    Terrace_Temperature             "[%.1f °C]"            <temperature>   (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Terrasse_Temperatur-_und_Luftfeuchtigkeitssensor/ActualTemperature:state:default]"}
 
-Group:Number                 gTemperature   "Temperatur"   <temperature>   (Home)
-Group:Number                 gHeating       "Heizung"      <heating>       (Home)
-Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"      <window>        (Home)
-Group:Number				 gBatteryState	 "Batteriezustand [%d]n" (Home)
