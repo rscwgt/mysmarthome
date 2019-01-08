@@ -1,1 +1,88 @@
-{}
+{
+  "astro:sun:local": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "thingUID": {
+        "segments": [
+          "astro",
+          "sun",
+          "local"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "astro",
+          "sun"
+        ]
+      },
+      "properties": {
+        "geolocation": "49.0540409,8.5453777,0"
+      },
+      "representationProperty": "geolocation",
+      "flag": "NEW",
+      "label": "Lokale Sonnendaten",
+      "timestamp": 1546880973009,
+      "timeToLive": -1
+    }
+  },
+  "astro:moon:local": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "thingUID": {
+        "segments": [
+          "astro",
+          "moon",
+          "local"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "astro",
+          "moon"
+        ]
+      },
+      "properties": {
+        "geolocation": "49.0540409,8.5453777,0"
+      },
+      "representationProperty": "geolocation",
+      "flag": "NEW",
+      "label": "Lokale Monddaten",
+      "timestamp": 1546880973035,
+      "timeToLive": -1
+    }
+  },
+  "homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ1585205": {
+    "class": "org.eclipse.smarthome.config.discovery.internal.DiscoveryResultImpl",
+    "value": {
+      "bridgeUID": {
+        "segments": [
+          "homematic",
+          "bridge",
+          "7e0bd100"
+        ]
+      },
+      "thingUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2",
+          "7e0bd100",
+          "NEQ1585205"
+        ]
+      },
+      "thingTypeUID": {
+        "segments": [
+          "homematic",
+          "HG-BC-RT-TRX-CyG-2"
+        ]
+      },
+      "properties": {
+        "serialNumber": "NEQ1585205"
+      },
+      "representationProperty": "serialNumber",
+      "flag": "NEW",
+      "label": "NEQ1585205",
+      "timestamp": 1546883741721,
+      "timeToLive": -1
+    }
+  }
+}

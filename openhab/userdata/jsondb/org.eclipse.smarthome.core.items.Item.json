@@ -26,14 +26,13 @@
       "label": "Party Stop Year"
     }
   },
-  "BueroThermostat_1_BoostMode": {
+  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
-      "itemType": "Switch",
+      "itemType": "String",
       "tags": [],
-      "label": "Boost Mode",
-      "category": "Switch"
+      "label": "Decalcification Weekday"
     }
   },
   "KuecheHeizthermostat_1_PartyTemperature": {
@@ -46,13 +45,14 @@
       "category": "Temperature"
     }
   },
-  "WohnzimmerTerrasseHeizthermostat_1_DecalcificationWeekday": {
+  "BueroThermostat_1_BoostMode": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
       "groupNames": [],
-      "itemType": "String",
+      "itemType": "Switch",
       "tags": [],
-      "label": "Decalcification Weekday"
+      "label": "Boost Mode",
+      "category": "Switch"
     }
   },
   "SchlafzimmerHeizthermostat_1_EcoTemperature": {
@@ -649,16 +649,6 @@
       "category": "Switch"
     }
   },
-  "WohnzimmerInnenHeizthermostat_1_AutoMode": {
-    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
-    "value": {
-      "groupNames": [],
-      "itemType": "Switch",
-      "tags": [],
-      "label": "Auto Mode",
-      "category": "Switch"
-    }
-  },
   "WohnzimmerTerrasseHeizthermostat_1_PartyStopDay": {
     "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
     "value": {
@@ -817,6 +807,16 @@
       "tags": [],
       "label": "Niedriger Batteriestatus",
       "category": "Battery"
+    }
+  },
+  "WohnzimmerInnenHeizthermostat_1_AutoMode": {
+    "class": "org.eclipse.smarthome.core.items.ManagedItemProvider$PersistedItem",
+    "value": {
+      "groupNames": [],
+      "itemType": "Switch",
+      "tags": [],
+      "label": "Auto Mode",
+      "category": "Switch"
     }
   },
   "WohnzimmerWandthermostat_1_ActualTemperature": {
