@@ -1,67 +1,67 @@
-Group     GrpWohnung                      "Unsere Wohnung 2"   <house>
+Group     GrpWohnung                      "Unsere Wohnung" <house>
 
 Group     LivingDining                    "Wohn-Esszimmer"   <sofa>          (Home)
-Group     Kitchen                         "Küche"           <kitchen>       (Home)
+Group     Kitchen                         "Küche"            <kitchen>       (Home)
 Group     Bathroom                        "Bad"              <bath>          (Home)
-Group     Office                          "Büro"            <office>        (Home)
+Group     Office                          "Büro"             <office>        (Home)
 Group     Bedroom                         "Schlafzimmer"     <bedroom>       (Home)
 
-Group     gThermostat                      "Thermostate"             (Home)
+Group     gThermostat                     "Thermostate"     <temperature>    (Home)
 
-Group     gLivingDining_Thermostat         "Wohnzimmer Wand-Thermostat"   (LivingDining, gThermostat) ["Thermostat"]
-Group     gLivingDiningTT_Thermostat       "Wohnzimmer-Terrasse Heizthermostat"   (LivingDining, gThermostat) ["Thermostat"]
-Group     gLivingDiningIT_Thermostat       "Wohnzimmer-Innen Heizthermostat"   (LivingDining, gThermostat) ["Thermostat"]
-Group     gKitchen_Thermostat              "Kueche Thermostat"       (Kitchen, gThermostat)      ["Thermostat"]
-Group     gOffice_Thermostat               "Buero Thermostat"        (Office, gThermostat)       ["Thermostat"]
-Group     gBedroom_Thermostat              "Schlafzimmer Thermostat" (Bedroom, gThermostat)      ["Thermostat"]
+Group     gLivingDining_Thermostat        "Wohnzimmer Thermostat"            (LivingDining, gThermostat) ["Thermostat"]
+Group     gLivingDiningTT_Thermostat      "Wohnzimmer Terrasse Thermostat"   (LivingDining, gThermostat) ["Thermostat"]
+Group     gLivingDiningIT_Thermostat      "Wohnzimmer Innen Thermostat"      (LivingDining, gThermostat) ["Thermostat"]
+Group     gOffice_Thermostat              "Buero Thermostat"                 (Office,       gThermostat) ["Thermostat"]
+Group     gKitchen_Thermostat             "Kueche Thermostat"                (Kitchen,      gThermostat) ["Thermostat"]
+Group     gBedroom_Thermostat             "Schlafzimmer Thermostat"          (Bedroom,      gThermostat) ["Thermostat"]
 
+Group:Number                              gTemperature     "Temperatur"           <temperature>   (Home)
+Group:Number                              gHeating         "Heizung"              <heating>       (Home)
+Group:Contact:OR(OPEN, CLOSED)            gWindow          "Fenster"              <window>        (Home)
+Group:Number				              gBatteryState	   "Batteriezustand [%d]"                 (Home)
 
-Group:Number                     gTemperature   "Temperatur"           <temperature>   (Home)
-Group:Number                     gHeating       "Heizung"              <heating>       (Home)
-Group:Contact:OR(OPEN, CLOSED)   gWindow        "Fenster"              <window>        (Home)
-Group:Number				     gBatteryState	"Batteriezustand [%d]" (Home)
+Number    Office_Temperature              "Ist-Temperatur [%.1f °C]"         <temperature>  (Office, gTemperature, gOffice_Thermostat) ["CurrentTemperature"]  {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
+Number    Office_Heating                  "Soll-Temperatur [%.1f °C]"        <heating>      (Office, gHeating, gOffice_Thermostat)     ["TargetTemperature"]   {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
+String    Office_ControlMode        	  "Modus"                                           (gOffice_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#CONTROL_MODE"}
+Number    Office_ValveState               "Ventil [%.1f %%]"                                (gOffice_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#VALVE_STATE"}
+Number    Office_BatteryState             "Batteriezustand [%s]"             <switch>       (gOffice_Thermostat, gBatteryState) {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:0#LOWBAT"}
 
-Number    LivingDining_Temperature        "Wz WT Ist-Temperatur [%.1f °C]"            <temperature>   (LivingDining, gTemperature, gLivingDining_Thermostat)  {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
-Number    LivingDining_Heating            "Wz WT Soll-Temp [%.1f °C]"            <heating>       (LivingDining, gHeating, gLivingDining_Thermostat)      {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
-Number    LivingDining_Temperature_Label1 "Wohnzimmer Temperatur" ["CurrentTemperature"]                        {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
-Number    LivingDining_Heating_Label1     "Wohnzimmer Heizung"    ["TargetTemperature"]                         {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
-String    LivingDining_ControlMode        "Wz WT Modus"                  (gLivingDining_Thermostat)      {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#CONTROL_MODE"}
-Number    LivingDining_BatteryState       "Wz WT Batteriezustand [%s]"       <switch>        (gBatteryState, gLivingDining_Thermostat) {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#LOWBAT"}
+Number    LivingDining_Temperature        "Ist-Temperatur [%.1f °C]"         <temperature>  (LivingDining, gTemperature, gLivingDining_Thermostat) ["CurrentTemperature"] {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#ACTUAL_TEMPERATURE"}
+Number    LivingDining_Heating            "Soll-Temparatur [%.1f °C]"        <heating>      (LivingDining, gHeating, gLivingDining_Thermostat)     ["TargetTemperature"]  {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#SET_TEMPERATURE"}
+String    LivingDining_ControlMode        "Modus"                                           (gLivingDining_Thermostat)                {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:1#CONTROL_MODE"}
+Number    LivingDining_BatteryState       "Batteriezustand [%s]"             <switch>       (gBatteryState, gLivingDining_Thermostat) {channel="homematic:HG-BC-TC-C-WM-4:7e0bd100:LEQ1330811:0#LOWBAT"}
 
-Number    LivingDiningTT_Temperature      "Wz-Terrasse HT Ist-Temp [%.1f °C]"            <temperature>   (LivingDining, gTemperature, gLivingDiningTT_Thermostat)  {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#ACTUAL_TEMPERATURE"}
-Number    LivingDiningTT_Heating          "Wz-Terrasse HT Soll-Temp [%.1f °C]"            <heating>       (LivingDining, gHeating, gLivingDiningTT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#SET_TEMPERATURE"}
-String    LivingDiningTT_ControlMode      "Wz-Terrasse HT Modus [%s]"                  (gLivingDiningTT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#CONTROL_MODE"}
-Number    LivingDiningTT_ValveState       "Wz-Terrasse HT Ventil [%.1f %%]"                   (gLivingDiningTT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#VALVE_STATE"}
-Number    LivingDiningTT_BatteryState     "Wz-Terrasse HT Batteriezustand [%s]"       <switch>        (gBatteryState, gLivingDiningTT_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:0#LOWBAT"}
+Number    LivingDiningTT_Temperature      "Wz-Terrasse Ist-Temp [%.1f °C]"   <temperature>  (LivingDining, gTemperature, gLivingDiningTT_Thermostat) ["CurrentTemperature"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#ACTUAL_TEMPERATURE"}
+Number    LivingDiningTT_Heating          "Wz-Terrasse Soll-Temp [%.1f °C]"  <heating>      (LivingDining, gHeating, gLivingDiningTT_Thermostat)      ["TargetTemperature"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#SET_TEMPERATURE"}
+String    LivingDiningTT_ControlMode      "Wz-Terrasse Modus [%s]"                          (gLivingDiningTT_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#CONTROL_MODE"}
+Number    LivingDiningTT_ValveState       "Wz-Terrasse Ventil [%.1f %%]"                    (gLivingDiningTT_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:1#VALVE_STATE"}
+Number    LivingDiningTT_BatteryState     "Wz-Terrasse Batteriezustand [%s]" <switch>       (gBatteryState, gLivingDiningTT_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1115280:0#LOWBAT"}
 
-Number    LivingDiningIT_Temperature      "Wz-Innen HT Ist-Temp [%.1f °C]"            <temperature>   (LivingDining, gTemperature, gLivingDiningIT_Thermostat)  {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#ACTUAL_TEMPERATURE"}
-Number    LivingDiningIT_Heating          "Wz-Innen HT Soll-Temp [%.1f °C]"            <heating>       (LivingDining, gHeating, gLivingDiningIT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#SET_TEMPERATURE"}
-String    LivingDiningIT_ControlMode      "Wz-Innen HT Modus [%s]"                  (gLivingDiningIT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#CONTROL_MODE"}
-Number    LivingDiningIT_ValveState       "Wz-Innen HT Ventil [%.1f %%]"                   (gLivingDiningIT_Thermostat)      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#VALVE_STATE"}
-Number    LivingDiningIT_BatteryState     "Wz-Innen HT Batteriezustand [%s]"       <switch>        (gBatteryState, gLivingDiningIT_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:0#LOWBAT"}
+Number    LivingDiningIT_Temperature      "Wz-Innen Ist-Temp [%.1f °C]"      <temperature>  (LivingDining, gTemperature, gLivingDiningIT_Thermostat) ["CurrentTemperature"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#ACTUAL_TEMPERATURE"}
+Number    LivingDiningIT_Heating          "Wz-Innen Soll-Temp [%.1f °C]"     <heating>      (LivingDining, gHeating, gLivingDiningIT_Thermostat)      ["TargetTemperature"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#SET_TEMPERATURE"}
+String    LivingDiningIT_ControlMode      "Wz-Innen Modus [%s]"                             (gLivingDiningIT_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#CONTROL_MODE"}
+Number    LivingDiningIT_ValveState       "Wz-Innen Ventil [%.1f %%]"                       (gLivingDiningIT_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:1#VALVE_STATE"}
+Number    LivingDiningIT_BatteryState     "Wz-Innen Batteriezustand [%s]"    <switch>       (gBatteryState, gLivingDiningIT_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1114732:0#LOWBAT"}
 
-Contact   LivingDining_Window             "Wz Fenster"               <window>        (LivingDining, gWindow)       {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:1#STATE"}
+Contact   LivingDining_Window             "Fenster"                          <window>       (LivingDining, gWindow)                     {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431899:1#STATE"}
 
-Number    Kitchen_Temperature             "[%.1f °C]"            <temperature>   (Kitchen, gTemperature, gKitchen_Thermostat)       {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
-Number    Kitchen_Temperature_Label1      "Kueche Temperatur"     ["CurrentTemperature"]                        {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
-Number    Kitchen_Heating                 "[%.1f °C]"            <heating>       (Kitchen, gHeating, gKitchen_Thermostat)           {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
-Number    Kitchen_Heating_Label1          "Kueche Heizung"        ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
-Contact   Kitchen_Window                  "Fenster"               <window>        (Kitchen, gWindow)            {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE"}
+Number    Kitchen_Temperature             "Ist-Temperatur [%.1f °C]"         <temperature>  (Kitchen, gTemperature, gKitchen_Thermostat) ["CurrentTemperature"]         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#ACTUAL_TEMPERATURE"}
+Number    Kitchen_Heating                 "Soll-Temperatur [%.1f °C]"        <heating>      (Kitchen, gHeating, gKitchen_Thermostat)     ["TargetTemperature"]          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#SET_TEMPERATURE"}
+String    Kitchen_ControlMode             "Modus [%s]"                                      (gKitchen_Thermostat)                        ["homekit:HeatingCoolingMode"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#CONTROL_MODE"}
+Number    Kitchen_ValveState              "Ventil [%.1f %%]"                                (gKitchen_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:1#VALVE_STATE"}
+Number    Kitchen_BatteryState            "Batteriezustand [%s]"             <switch>       (gBatteryState, gKitchen_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:NEQ0025277:0#LOWBAT"}
+Contact   Kitchen_Window                  "Fenster"                          <window>       (Kitchen, gWindow)                   {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0432397:1#STATE"}
 
-Number    Office_Temperature              "[%.1f °C]"            <temperature>   (Office, gTemperature, gOffice_Thermostat)        {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
-Number    Office_Temperature_Label1       "Buero Temperatur"      ["CurrentTemperature"]                        {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#ACTUAL_TEMPERATURE"}
-Number    Office_Heating                  "[%.1f °C]"            <heating>       (Office, gHeating, gOffice_Thermostat)            {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
-Number    Office_Heating_Label1           "Buero Heizung"         ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-3:7e0bd100:LEQ1338797:1#SET_TEMPERATURE"}
+Number    Bedroom_Temperature             "Ist-Temparatur [%.1f °C]"         <temperature>  (Bedroom, gTemperature, gBedroom_Thermostat) ["CurrentTemperature"]         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
+Number    Bedroom_Heating                 "Soll-Temparatur [%.1f °C]"        <heating>      (Bedroom, gHeating, gBedroom_Thermostat)     ["TargetTemperature"]          {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
+String    Bedroom_ControlMode             "Modus [%s]"                                      (gBedroom_Thermostat)                        ["homekit:HeatingCoolingMode"] {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#CONTROL_MODE"}
+Number    Bedroom_ValveState              "Ventil [%.1f %%]"                                (gBedroom_Thermostat)                {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#VALVE_STATE"}
+Number    Bedroom_BatteryState            "Batteriezustand [%s]"             <switch>       (gBatteryState, gBedroom_Thermostat) {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:0#LOWBAT"}
 
-Number    Bedroom_Temperature             "[%.1f °C]"            <temperature>   (Bedroom, gTemperature, gBedroom_Thermostat)       {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
-Number    Bedroom_Temperature_Label1      "Schlafzimmer Temperatur" ["CurrentTemperature"]                      {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#ACTUAL_TEMPERATURE"}
-Number    Bedroom_Heating                 "[%.1f °C]"            <heating>       (Bedroom, gHeating, gBedroom_Thermostat)           {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
-Number    Bedroom_Heating_Label1          "Schlafzimmer Heizung"  ["TargetTemperature"]                         {channel="homematic:HG-BC-RT-TRX-CyG-2:7e0bd100:LEQ1256338:1#SET_TEMPERATURE"}
+Number    Bathroom_Temperature            "Ist-Temperatur [%.1f °C]"         <temperature>  (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Wandthermostat/ActualTemperature:state:default]"}
+Contact   Bathroom_Window                 "Fenster"                          <window>       (Bathroom, gWindow)           {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE"}
+String    Bathroom_Window2                "FensterIp [%s]"                   <window>       (Bathroom, gWindow)           {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Fenster-_und_Türkontakt/WindowState:state:default]"}
 
-Number    Bathroom_Temperature            "[%.1f °C]"            <temperature>   (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Wandthermostat/ActualTemperature:state:default]"}
-Contact   Bathroom_Window                 "Fenster"               <window>        (Bathroom, gWindow)           {channel="homematic:HG-BC-SC-Rd-WM-2:7e0bd100:LEQ0431921:1#STATE"}
-String    Bathroom_Window2                "FensterIp [%s]"        <window>        (Bathroom, gWindow)           {mqtt="<[raspimqtt:msgHomematicIp/plain/Bad_Fenster-_und_Türkontakt/WindowState:state:default]"}
-
-Number    Terrace_Temperature             "[%.1f °C]"            <temperature>   (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Terrasse_Temperatur-_und_Luftfeuchtigkeitssensor/ActualTemperature:state:default]"}
+Number    Terrace_Temperature             "[Ist-Temperatur %.1f °C]"         <temperature>  (Bathroom, gTemperature)      {mqtt="<[raspimqtt:msgHomematicIp/plain/Terrasse_Temperatur-_und_Luftfeuchtigkeitssensor/ActualTemperature:state:default]"}
 
 
